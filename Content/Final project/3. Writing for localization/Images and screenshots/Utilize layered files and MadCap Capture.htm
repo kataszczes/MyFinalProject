@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Utilize layered files and MadCap Capture</h1>
+        <p>Managing multiple versions of images for different languages can be time-consuming and error-prone, especially when dealing with embedded text and annotations.</p>
+        <h3>Best practices:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Adopt <MadCap:variable name="Variables.Capture" />:</span> Use <MadCap:variable name="Variables.Capture" /> to create layered images where text annotations are stored separately from the image in <code>.props</code> files. This separation simplifies the translation process and maintains consistency across languages.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Maintain source files:</span> Keep original, editable image files organized and accessible. This practice facilitates updates and modifications without recreating images from scratch.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Integrate with translation workflows:</span> Ensure that the text layers in images are included in the translation workflow, allowing translators to access and modify text without altering the image itself.</p>
+            </li>
+        </ul>
+        <div class="longExample"><strong>Example:</strong><![CDATA[
+        ]]><div class="badDescriptiveExample" MadCap:autonum="❌"> Poor practice: Creating separate images for each language, embedding translated text directly into each version.</div><div class="goodDescriptiveExample" MadCap:autonum="✔️"> Improved practice: Using a single image with text layers managed through <MadCap:variable name="Variables.Capture" />, enabling efficient updates and consistency across all language versions.</div></div>
+    </body>
+</html>

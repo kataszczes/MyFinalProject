@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="6"
+  SkinType="Component"
+  Comment="HTML5 Favicon skin"
+  ComponentType="Favicon">
+  <Stylesheet>
+    <Resources>
+      <Resource
+        Name="icons8-favicon-96.png">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</Resource>
+    </Resources>
+  </Stylesheet>
+  <Master
+    Image="icons8-favicon-96.png" />
+  <Browser>
+    <SmallFavicon
+      Image="(generated)"
+      SizePx="16 px" />
+    <MediumFavicon
+      Image="(generated)"
+      SizePx="32 px" />
+    <LargeFavicon
+      Image="(generated)"
+      SizePx="96 px" />
+  </Browser>
+  <ShortcutIcon
+    Image="(generated)" />
+  <Touch>
+    <TouchIcon
+      Image="(none)"
+      SizePx="" />
+  </Touch>
+  <Windows>
+    <MicrosoftSmallTile
+      Image="(none)" />
+    <MicrosoftMediumTile
+      Image="(none)" />
+    <MicrosoftWideTile
+      Image="(none)" />
+    <MicrosoftLargeTile
+      Image="(none)" />
+  </Windows>
+  <Strings />
+</CatapultSkin>

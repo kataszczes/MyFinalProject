@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Allow for text expansion</h1>
+        <p>Languages vary in length. When you translate English into German, French, or Russian, the resulting text may be up to 30–50% longer. Failing to allow space for this in your layout can lead to truncation, overflow, or broken page elements.</p>
+        <div class="do" MadCap:autonum="✔️"> Best practices:</div>
+        <ul>
+            <li>
+                <p>Design with flexible, responsive containers (not fixed-width text boxes).</p>
+            </li>
+            <li>
+                <p>Leave extra space in UI mockups, tables, and callouts.</p>
+            </li>
+            <li>
+                <p>Avoid narrow columns or tightly constrained layouts in PDF outputs.</p>
+            </li>
+            <li>
+                <p>Consider previewing your content with "Lorem ipsum" text that simulates expansion (for example, with string duplication).</p>
+            </li>
+        </ul>
+        <div class="dont" MadCap:autonum="❌"> Pitfalls to avoid:</div>
+        <ul>
+            <li>
+                <p>Hardcoded widths in tables or callouts that break when translated.</p>
+            </li>
+            <li>
+                <p>UI screenshots that can't accommodate longer text labels.</p>
+            </li>
+            <li>
+                <p>Vertical spacing that fits exactly around English but breaks in German or Finnish.</p>
+            </li>
+        </ul>
+        <div class="longExample"><strong>Example:</strong> An English button labeled “Next” may become “Następny” in Polish — breaking UI layout if not designed to expand.</div>
+    </body>
+</html>

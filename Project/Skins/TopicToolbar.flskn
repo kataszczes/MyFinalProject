@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="6"
+  SkinType="Component"
+  Comment="HTML5 Toolbar skin"
+  ComponentType="TopicToolbar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="ToolbarItem">
+        <Classes>
+          <StyleClass
+            Name="SelectLanguage">
+            <Properties>
+              <Property
+                Name="ButtonOrder">row</Property>
+              <Property
+                Name="PaddingRight">0em</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Style
+        Name="Toolbar">
+        <Properties>
+          <Property
+            Name="Float">right</Property>
+          <Property
+            Name="MarginRight">2em</Property>
+          <Property
+            Name="MarginTop">1em</Property>
+        </Properties>
+      </Style>
+    </Styles>
+  </Stylesheet>
+  <TopicToolbar
+    EnableCustomLayout="true"
+    Buttons="Print|Separator|SelectLanguage" />
+  <Strings>
+    <Stylesheet
+      lang="pl">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="ToolbarItem">
+            <Classes>
+              <StyleClass
+                Name="SelectLanguage">
+                <Properties>
+                  <Property
+                    Name="AltText">Zmień język</Property>
+                  <Property
+                    Name="Tooltip">Zmień język</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

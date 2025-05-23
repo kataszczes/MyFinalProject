@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Output files</h1>
+        <p>Seemingly one of the simplest methods for localization is generating output files (such as Word documents, HTML, or PDF) from Flare and sending these to the translator.</p>
+        <h3>How it works</h3>
+        <ul>
+            <li>
+                <p>You generate a finalized, human-readable output (for example, Word .docx).</p>
+            </li>
+            <li>
+                <p>The translator edits the text directly in the output file.</p>
+            </li>
+            <li>
+                <p>You reimport the translated document into <MadCap:variable name="Variables.Flare" /> or manually update the project.</p>
+            </li>
+        </ul>
+        <h3>Pros</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Simplicity:</span> Easy to understand for non-technical users and translators unfamiliar with Flare.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Immediate usability:</span> Translation can begin as soon as the outputs are ready without needing specialized translation tools.</p>
+            </li>
+        </ul>
+        <h3>Cons</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Manual rework:</span> The translated file often has to be manually copied back into Flare topics or recreated, which is time-consuming and error-prone.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Loss of structure:</span> Outputs are not structured like the original Flare project. You lose snippets, variables, and metadata. You should avoid using conditions because they are not recognized and will not be applied correctly.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Poor scalability:</span> Suitable only for very small, static projects with minimal updates.</p>
+            </li>
+        </ul>
+        <h3>Best use cases</h3>
+        <ul>
+            <li>
+                <p>Very small projects or single files without conditional text.</p>
+            </li>
+            <li>
+                <p>One-time or occasional translation tasks with no planned updates.</p>
+            </li>
+            <li>
+                <p>Non-technical audiences where translation needs to be fast and simple.</p>
+            </li>
+        </ul>
+        <div class="tip">It is recommended to always have the source files translated. By translating the source project (and not the output files), you increase the integrity of the project, you avoid potential workflow and maintenance challenges, and you reduce your overall translation costs.</div>
+    </body>
+</html>

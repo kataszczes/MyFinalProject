@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Tags placement</h1>
+        <h3>What it refers to:</h3>
+        <p>How and where you place conditions, variables, or snippets within text can drastically affect translatability.</p>
+        <h3>Best practices for localization:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Apply tags at logical break points:</span> Apply condition tags to entire paragraphs or block elements instead of splitting sentences. Inline tagging fragments the content and disrupts translation memory systems.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Avoid tagging fragments of a sentence:</span> Most translation tools work at the sentence level. If you apply condition tags to individual words, they may appear out of context to translators.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Keep code clean:</span> Avoid applying multiple types of tags (for example, snippet + variable + condition) within a short segment of text.</p>
+            </li>
+        </ul>
+        <div class="do" MadCap:autonum="✔️"> Good example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;p MadCap:conditions="Product_Pro"&gt;This feature is available in the Pro version only.&lt;/p&gt;</code>
+            </div>
+            <p>Why it's good:</p>
+            <ul>
+                <li>
+                    <p>Descriptive and precise name</p>
+                </li>
+                <li>
+                    <p>Applied to a single sentence for clarity</p>
+                </li>
+                <li>
+                    <p>No overlapping or compound conditions</p>
+                </li>
+            </ul>
+        </div>
+        <div class="dont" MadCap:autonum="❌"> Poor example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;p&gt;This feature is &lt;span MadCap:conditions="Product_Pro"&gt;available&lt;/span&gt; in the &lt;Variable&gt;ProductEdition&lt;/Variable&gt;.&lt;/p&gt;</code>
+            </div>
+            <p>Confusing to translate and maintain.</p>
+        </div>
+        <div class="translatorPOV">
+            <MadCap:snippetText src="../../../Resources/Snippets/TranslatorPOV.flsnp" />
+            <p>Placing many different tags inside one sentence or overlapping tags  can obscure the final output, make the content harder for translators to work with, and disrupt translation memory systems. This is how text with badly applied tags may appear in <MadCap:variable name="Variables.Flare" />:</p>
+            <p>
+                <img src="../../../Resources/Images/tags/tags-flare.png" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" alt="A screenshot of how tags look in MadCap Flare" />
+            </p>
+            <p>This is how a translator sees this text:</p>
+            <ul>
+                <li>
+                    <p><MadCap:variable name="Variables.Lingo" />
+                    </p>
+                </li>
+            </ul>
+            <p>
+                <img src="../../../Resources/Images/tags/tag-lingo-not.png" alt="A screenshot of an example text with badly applied tags and how they look in MadCap Lingo" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+            </p>
+            <ul>
+                <li>
+                    <p>SDL Trados Studio</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../../../Resources/Images/tags/tag-trados-not.png" alt="A screenshot of an example text with badly applied tags and how they look in SDL Trados Studio" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+            </p>
+            <p>Problems:</p>
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>An abundance of tags creates visual clutter, making it difficult to understand the sentence structure and anticipate the final outputs.</p>
+                </li>
+            </ul>
+            <p>Flattening snippets and variables solves some potential issues, but not all—other tags may still remain and contribute to the confusion.</p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Avoid embedded text</h1>
+        <p>Embedding text directly into images (for example, using graphic design tools to place text within screenshots) renders the text inaccessible to translation tools. This practice requires manual extraction and re-embedding of translated text, increasing the risk of errors and inconsistencies.</p>
+        <h3>Best practices:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Use callouts and captions:</span> Instead of embedding text, utilize callouts or captions that are separate from the image. <MadCap:variable name="Variables.Capture" /> allows for the creation of callouts that are stored in an accompanying XML-based <code>.props</code> file, facilitating easy translation without altering the image itself.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Leverage vector graphics:</span> When possible, use vector graphics for illustrations. Vector formats enable the separation of text from images, allowing for straightforward text updates without modifying the graphic.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Maintain text in source files:</span> Keep all textual content within the source files of your documentation project. This approach ensures that translation memory systems can access and process the text efficiently.</p>
+            </li>
+        </ul>
+        <div class="longExample"><strong>Example:</strong><![CDATA[
+        ]]><div class="badDescriptiveExample" MadCap:autonum="❌"> Poor practice: A screenshot with embedded English text like "Click here to start" requires creating a new image for each language.</div><div class="goodDescriptiveExample" MadCap:autonum="✔️"> Improved practice: A screenshot without text, accompanied by a caption or callout in the documentation that reads "Click the 'Start' button."</div></div>
+    </body>
+</html>

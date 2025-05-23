@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Creating Lingo Project</h1>
+        <p>You can create a new Lingo translation project using the <span class="UIelement">Start New Project Wizard</span>. This wizard lets you select from many different kinds of files (for example, MadCap Flare projects, Doc-To-Help projects, Microsoft Word documents, Adobe FrameMaker, Adobe InDesign, XML files, DITA files), as well as specify one or more target languages. You can also add entire folders to a project and then select the file types you want to translate.</p>
+        <div class="tip">NOTE: This procedure describes basic export configuration. For a comprehensive guide on exporting Flare Projects, visit the official <MadCap:variable name="Variables.Lingo" /> website: <a href="https://help.madcapsoftware.com/lingo11r3/Content/Lingo/Projects/Creating-Projects.htm" target="_blank">Creating Projects</a></div>
+        <h3>How to create a New Project</h3>
+        <ol>
+            <li>
+                <p>Do one of the following, depending on the part of the user interface you are using:</p>
+                <ul>
+                    <li>
+                        <p>Ribbon: <span class="UIelement">Select File → New Project</span>.</p>
+                    </li>
+                    <li>
+                        <p>Keyboard shortcut: Press CTRL+SHIFT+N.</p>
+                    </li>
+                </ul>
+                <p>The <span class="UIelement">Start New Project Wizard</span> opens.</p>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">Name</span> field, type an appropriate name for your project.</p>
+            </li>
+            <li>
+                <p>By default, a path to the <span class="path">Documents\My Translated Projects</span> folder on your hard drive is entered in the <span class="UIelement">Folder</span> field.   Continue with the next step, unless you want to have your project files placed in a different folder.</p>
+                <div class="optionalStep">(Optional) In the <span class="UIelement">Domain</span> field, you can type a subject category for your project, or select one from the drop-down.  Domain metadata appears throughout the project, such as when you select a suggestion in the translation memory.</div>
+                <div class="optionalStep">(Optional) In the <span class="UIelement">Client</span> field, you can type the name of the client you are creating a translation project for.  Client metadata appears throughout the project, such as when you select a suggestion in the translation memory.</div>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">Source Language</span> drop-down, select the original language that is used in the project you are translating. Make sure this language matches the source exactly. For example, you might select <span class="UIelement">English (en)</span> here, but the source files are actually in the <span class="UIelement">English United States (en-us)</span> language. Therefore, you should instead select <span class="UIelement">English (United States)</span> in this field.</p>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">Target Languages</span> grid, select the language(s) that you want to use for the translation and click <span class="UIelement">right arrow</span> icon to move it to the <span class="UIelement">Selected Languages</span> grid. If you need to remove a language from the <span class="UIelement">Selected Languages</span> grid, click <span class="UIelement">left arrow</span> icon.</p>
+                <div class="optionalStep">(Optional) If you want to bind the Lingo project to a source control provider, select <span class="UIelement">Bind to source control</span>.</div>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Next</span>.</p>
+                <div class="optionalStep">(Optional) If you have selected the <span class="UIelement">Bind to Source Control</span> option, click <span class="UIelement">Bind Project</span>. The Bind Project dialog will appear. Complete all relevant steps and when you are finished, click <span class="UIelement">Next</span>.</div>
+            </li>
+            <li>
+                <p>Add files or folders to your Lingo project locally or from source control. If you select a folder, the files within it are added.</p>
+                <p>To add files to a Lingo Project</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Click <span class="UIelement">Add File</span>.</p>
+                    </li>
+                    <li>
+                        <p>In the dialog that opens, navigate to the project or files that you want to translate. You may need to click the <span class="UIelement">file type</span> drop-down to view and select the appropriate kind of files you want to add.</p>
+                    </li>
+                    <li>
+                        <p>If you need to select only one file, you can double-click it. If you need to select multiple files (for example, multiple Word documents) in the same folder, you can hold your SHIFT or CTRL key and select either a range or individual files. Then click <span class="UIelement">Open</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Next</span>.</p>
+                <div class="optionalStep">(Optional) If you are creating a project using <MadCap:variable name="Variables.Flare" /> or DITA source files, select additional project settings (flatten variables, flatten snippets, create language skin and so on).</div>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Next</span>.</p>
+                <div class="optionalStep">(Optional) Available translation memory (TM) databases are listed in a grid, and you can select the ones you want to use for the current project.</div>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Next</span>.</p>
+                <div class="optionalStep">(Optional) Available termbases are listed in a grid, and you can select the ones you want to use for the current project.</div>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Finish</span>.</p>
+            </li>
+        </ol>
+        <p>When you create a new Lingo project, a file with an .liprj extension is automatically generated (for example, <span class="path">My Project Polish.liprj</span>).</p>
+    </body>
+</html>

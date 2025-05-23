@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Exporting Flare Project</h1>
+        <p>You can export an entire Flare project, or parts of one, to use for translation. If you only need a portion of a parent project to be translated, you don't want to send the translator all of the files, but rather a smaller version of the project containing only the files requiring translation.</p>
+        <p>You can export a project using the <span class="UIelement">Export Project Wizard</span> to guide you. Alternatively, you can add an export file to your project and use the <span class="UIelement">Export Project File Editor</span>.</p>
+        <p>&#160;</p>
+        <div class="tip">NOTE: This procedure describes basic export configuration. For a comprehensive guide on exporting Flare Projects, visit the official <MadCap:variable name="Variables.Flare" /> website: <a href="https://help.madcapsoftware.com/flare2024r2/Content/Flare/Project-Management/Exporting-Projects/Exporting-Projects.htm#WhatsNoteworthy" target="_blank">Exporting Projects</a></div>
+        <h3>How to export a project via the Export Project Wizard</h3>
+        <ol>
+            <li>
+                <p>Open a project.</p>
+            </li>
+            <li>
+                <p>Select <span class="UIelement">Project → Export Project</span>. The Export Project Wizard opens.</p>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">New Project Name</span> field, enter a name for the exported project.</p>
+                <div class="optionalStep">(Optional) The New Project Path field is automatically populated with the default location (<span class="path">Documents\My Project Exports</span>). If you want to export the project to a different location, click the browse ellipsis  and select the folder you want.</div>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">Export From</span> drop-down, select one of the options.</p>
+                <ul>
+                    <li>
+                        <p><span class="UIelement">Entire Project</span>: This option makes a copy of the entire project, including all folders, subfolders, and files.</p>
+                    </li>
+                    <li>
+                        <p><span class="bulletIntroduction">Using Target</span>: This option uses the same workflow as that used for generating a target. When you select a particular target, the same files and content that would be included in generated output are included in the exported project.</p>
+                    </li>
+                    <li>
+                        <p><span class="bulletIntroduction">Using Conditions</span>: This option exports only files and content affected by condition tags that you tell Flare to include or exclude.</p>
+                    </li>
+                    <li>
+                        <p><span class="UIelement">Using File Tags</span>: This option exports only files affected by file tags that you tell Flare to include or exclude. This method can be especially useful for translation purposes, exporting only files that are marked with a certain file tag status (for example, Ready for Translation).</p>
+                    </li>
+                    <li>
+                        <p><span class="UIelement">Select Files</span>: This option exports only specific files that you select. You can choose any files stored in the source project's Content Explorer and Project Organizer.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>In the <span class="UIelement">Output</span> drop-down, select one of the options.</p>
+                <ul>
+                    <li>
+                        <p><span class="UIelement">Zip File</span>: This option packages the project files into a single zip file with an .flprjzip extension and places it in a location that you select. The default location is <span class="path">Documents\My Project Exports</span>.</p>
+                    </li>
+                    <li>
+                        <p><span class="UIelement">Project Files</span>: This option simply exports the project files to a location that you select. The default location is <span class="path">Documents\My Project Exports</span>.</p>
+                    </li>
+                    <li>
+                        <p><span class="UIelement">Project Template</span>: This option exports the project files to your templates folder (for example, <span class="path">Documents\My Templates\Projects</span>). By being placed in this location, the project files become available as a template selection when you create a new project.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Next</span>.</p>
+                <div class="optionalStep">(Optional) You can select one or both of the following:
+                <ul><li><p><span class="UIelement">Convert variables to text</span>: Select this option if you want all relevant variables to be converted to text.</p></li><li><p><span class="UIelement">Convert snippets to text</span>: Select this option if you want all relevant snippets to be converted to text.</p></li></ul></div>
+            </li>
+            <li>
+                <p>Click <span class="UIelement">Finish</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

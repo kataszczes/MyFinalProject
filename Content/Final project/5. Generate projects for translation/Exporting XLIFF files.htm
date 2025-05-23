@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Exporting XLIFF files</h1>
+        <p>XLIFF (XML Localization Interchange File Format) is a standard for exchanging localization data. Although Flare does not generate XLIFF files directly, you can export your Flare content to <MadCap:variable name="Variables.Lingo" />, and from there, create XLIFF files for translation.</p>
+        <ol>
+            <li>
+                <p>Export your Flare project (to see this procedure, go to <MadCap:xref href="Exporting Flare Project.htm">Exporting Flare Project</MadCap:xref> section).</p>
+            </li>
+            <li>
+                <p>Create a Lingo Project from Flare (to see this procedure, go to <MadCap:xref href="Creating Lingo Project.htm">Creating Lingo Project</MadCap:xref> section).</p>
+            </li>
+            <li>
+                <p>Export an XLIFF bundle to send to your LSP:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select <span class="UIelement">View → File List</span>.</p>
+                    </li>
+                    <li>
+                        <p>Select the files to be included in the bundle.</p>
+                    </li>
+                    <li>
+                        <p>In the local toolbar click the <span class="UIelement">Create Bundle</span> button.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="UIelement">Bundle Settings</span> area, select the <span class="UIelement">XLIFF Files Bundle</span> and check the project files to include with the bundle.</p>
+                    </li>
+                    <li>
+                        <p>Include Project Translation Memories, as needed.</p>
+                    </li>
+                    <li>
+                        <p>Include Project Termbases, as needed.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="UIelement">OK</span>. Statistics for the project will appear.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="UIelement">Close</span>. A subfolder (within your project folder) named Exporting opens. This subfolder holds the ZIP file. This file contains the files that your translator needs to work with.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Deliver XLIFF files to the LSP along with a style guide, if available.</p>
+            </li>
+            <li>
+                <p>Once translation is completed and reviewed, import the XLIFF files back into the Lingo project.</p>
+            </li>
+            <li>
+                <p>Export the Lingo project into a Flare project in the target language.</p>
+            </li>
+        </ol>
+    </body>
+</html>

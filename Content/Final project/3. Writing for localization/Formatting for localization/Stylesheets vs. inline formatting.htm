@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Stylesheets vs. inline formatting</h1>
+        <h3>What’s the issue?</h3>
+        <p>Inline formatting (like manually setting font colors, weights, or sizes in a WYSIWYG editor) may seem convenient, but it introduces major localization challenges.</p>
+        <p>&#160;</p>
+        <div class="do" MadCap:autonum="✔️"> Best practices:</div>
+        <ul>
+            <li>
+                <p>Always define and apply styles via CSS classes or global stylesheets, not inline.</p>
+            </li>
+            <li>
+                <p>Never use the <code>content</code> CSS property to inject visible or translatable text. Text embedded this way is hidden from translation workflows (like XLIFF exports).</p>
+            </li>
+            <li>
+                <p>Keep separate stylesheets for languages only when absolutely necessary (for example, RTL layout support), but avoid language-specific styles for textual content.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <div class="dont" MadCap:autonum="❌"> Pitfalls to avoid:</div>
+        <ul>
+            <li>
+                <p>Adding labels or titles via CSS, such as:</p>
+            </li>
+        </ul>
+        <div class="descriptiveExample">
+            <p><code>.warning::before {   content: "Caution: "; }</code>
+            </p>
+            <p>This "Caution" will never be translated unless the stylesheet itself is extracted and localized manually.</p>
+        </div>
+        <ul>
+            <li>
+                <p>Applying formatting like <code>&lt;span style="font-weight:bold; color:red;"&gt;Important&lt;/span&gt;</code> inline. This is hard to manage at scale.</p>
+            </li>
+        </ul>
+        <div class="descriptiveExample">
+            <p>Better approach: Define <code>.important-note</code> in your CSS and apply it as a class:</p>
+            <p><code>.important-note {   font-weight: bold;   color: red; }</code>
+            </p>
+            <p>Then simply apply the class in Flare.</p>
+        </div>
+    </body>
+</html>

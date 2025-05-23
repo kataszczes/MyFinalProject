@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Allow for text expansion</h1>
+        <p>Translated text often occupies more space than the original language. For instance, German translations can be up to 30% longer than their English counterparts. Without accommodating this expansion, text may overlap or extend beyond designated areas in images.</p>
+        <h3>Best practices:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Design flexible layouts:</span> When creating callouts or annotations, ensure they can expand or contract based on text length. <MadCap:variable name="Variables.Capture" /> supports auto-sizing of text boxes, which adjusts the size dynamically to fit the content .</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Test with pseudo-localization:</span> Implement pseudo-localization techniques to simulate text expansion and identify potential layout issues before actual translation.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Avoid fixed-size containers:</span> Refrain from using fixed-size text containers in images. Instead, allow for dynamic resizing to accommodate varying text lengths.</p>
+            </li>
+        </ul>
+        <div class="longExample"><strong>Example:</strong><![CDATA[
+        ]]><div class="badDescriptiveExample" MadCap:autonum="❌"> Poor practice: A fixed-size callout box that fits only the English text "End" may not accommodate the Polish translation "Zakończ," leading to text overflow.</div><div class="goodDescriptiveExample" MadCap:autonum="✔️"> Improved practice: A dynamically resizing callout box that adjusts to fit the translated text, maintaining readability and aesthetics.</div></div>
+    </body>
+</html>

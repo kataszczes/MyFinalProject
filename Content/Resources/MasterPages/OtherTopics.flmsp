@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <div class="topicContainer">
+            <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: SelectLanguage;" data-mc-skin="/Project/Skins/Toolbar.flskn" />
+            <MadCap:breadcrumbsProxy />
+            <MadCap:bodyProxy />
+        </div>
+        <footer class="MTdisclaimer" MadCap:conditions="Default.PolishTarget,Default.WebExclude">
+            The content on this page has been automatically translated from English. Machine translation may contain errors. Please refer to the original English version for the most accurate information.
+        </footer>
+    </body>
+</html>

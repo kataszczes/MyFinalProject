@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Final project/1. Introduction/Introduction.htm'],s:['+','kontekstu','printer','utrzymywać'],p:[['+',20],['eksportuj',42],['kontekstowych',5],['notacji',11],['product_old',18],['strukturę',16],['użytkownika',1],['zawartość',16]]});

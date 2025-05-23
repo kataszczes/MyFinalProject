@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Variables</h1>
+        <h3>What they are:</h3>
+        <p>Variables are placeholders for content that may change over time or between outputs, such as product names, version numbers, or company names.</p>
+        <h3>Best practices for localization:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Use only for proper nouns, versions, and other non-translatable text:</span> Product names, version numbers and branding should stay consistent and untranslated. Never use them for generic terms like "manual", "website", device".</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Avoid using variables mid-sentence for translatable words:</span> Translators need full context, and segmented phrases with variables make proper sentence structure and grammar difficult in other languages.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Use descriptive naming conventions:</span> Use names like <code>ProductName_Pro</code>, not just <code>Var1</code>, to help translators and other authors understand the content.</p>
+            </li>
+        </ul>
+        <div class="do" MadCap:autonum="✔️"> Good example:</div>
+        <div class="descriptiveExample">
+            <div class="example">The <code>&lt;Variable&gt;ProductName&lt;/Variable&gt;</code> supports multiple file formats.</div>
+            <p>Why it's good:</p>
+            <ul>
+                <li>
+                    <p>Clear, descriptive name</p>
+                </li>
+                <li>
+                    <p>Contains a proper noun that does not depend on the grammatical structure of the sentence.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="dont" MadCap:autonum="❌"> Poor example:</div>
+        <div class="descriptiveExample">
+            <div class="example">This <code>&lt;Variable&gt;EventType&lt;/Variable&gt;</code> has already ended. You can start a new one.
+        </div>
+            <ul>
+                <li>
+                    <p>where <code>EventType</code> may be "webinar" or "meeting"</p>
+                </li>
+            </ul>
+            <p>Problems:</p>
+            <p>In some languages, the variable may hold words that have different genders (in Polish, "webinar" is masculine (ten webinar) and "meeting" is neuter (to spotkanie)). This affects the whole sentence:</p>
+            <ul style="list-style-type: circle;">
+                <li>
+                    <p> <span class="example">This <code>webinar</code> has already ended. You can start a new one.</span> becomes <span class="example">Ten webinar już się zakończył. Możesz rozpocząć nowy.</span></p>
+                </li>
+                <li>
+                    <p><span class="example">This <code>meeting</code> has already ended. You can start a new one.</span>  becomes <span class="example">To spotkanie już się zakończyło. Możesz rozpocząć nowe.</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="tip">Tip: In Flare and Lingo, you can flatten the variables and convert them to plain text. This way the translator can adjust the grammatical structure each time.</div>
+        <div class="translatorPOV">
+            <MadCap:snippetText src="../../../Resources/Snippets/TranslatorPOV.flsnp" />
+            <p>
+                <p>Using variables for common nouns makes it difficult—or even impossible—to account for varying genders, numbers, and grammatical cases in translated content. This is how text with badly applied variables may appear in <MadCap:variable name="Variables.Flare"></MadCap:variable>:</p>
+                <p>
+                    <img src="../../../Resources/Images/variable/variable-flare.png" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" alt="A screenshot of how variables look in MadCap Flare" />
+                </p>
+                <p>This is how a translator sees this text with variables maintained:</p>
+                <ul>
+                    <li>
+                        <p><MadCap:variable name="Variables.Lingo" />
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/variable/variable-lingo-not.png" alt="A screenshot of an example text with badly applied variables and how they look in MadCap Lingo" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+                </p>
+                <ul>
+                    <li>
+                        <p>SDL Trados Studio</p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/variable/variable-trados-not.png" alt="A screenshot of an example text with badly applied variables and how they look in SDL Trados Studio" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+                </p>
+                <p>Problems:</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>The translator does not see the content of a variable—neither in <MadCap:variable name="Variables.Lingo" /> nor in a third-party CAT tool—as variables are stored in a separate file.</p>
+                    </li>
+                    <li>
+                        <p>Common nouns used as variables typically need to be translated and, in some languages, inflected or otherwise grammatically adjusted. This is not possible during translation due to the fixed nature of variables.</p>
+                    </li>
+                    <li>
+                        <p>Changing a variable may alter the gender of the noun it contains in the translated language. Such a change can require rewriting the surrounding sentence, which defeats the purpose of using variables to save time and effort.</p>
+                    </li>
+                </ul>
+                <p><MadCap:variable name="Variables.Flare" /> gives an opportunity to flatten variables during the export process in order to remedy some of the possible problems. This is how the translator sees the text with variables flattened:</p>
+                <ul>
+                    <li>
+                        <p><MadCap:variable name="Variables.Lingo" />
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/variable/variable-lingo-flat.png" alt="A screenshot of an example text with badly applied variables and how they look in MadCap Lingo when flattened" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" />
+                </p>
+                <ul>
+                    <li>
+                        <p>SDL Trados Studio</p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/variable/variable-trados-flat.png" alt="A screenshot of an example text with badly applied variables and how they look in SDL Trados Studio when flattened" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+                </p>
+                <p>In the case of variables, flattening them solves most of the problems. However, the variables feature is lost in the translated files, and so are the benefits of using them in the first place.</p>
+            </p>
+        </div>
+    </body>
+</html>

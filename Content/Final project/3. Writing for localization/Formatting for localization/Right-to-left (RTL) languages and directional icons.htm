@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Right-to-left (RTL) languages and directional icons</h1>
+        <p>Right-to-left languages such as Arabic, Hebrew, Persian (Farsi), and Urdu pose specific formatting challenges—not only for text direction but also for visual cues, layout flow, and iconography.</p>
+        <p>RTL Considerations:</p>
+        <ul>
+            <li>
+                <p>Layout direction must be mirrored entirely—from paragraph alignment to navigation menus.</p>
+            </li>
+            <li>
+                <p>Icons that suggest direction (for example, arrows, “Next” buttons, forward/back) must also be mirrored to align with reading flow.</p>
+            </li>
+        </ul>
+        <div class="do" MadCap:autonum="✔️"> Best practices:</div>
+        <ul>
+            <li>
+                <p>Use Flare’s RTL support in stylesheets (<code>direction: rtl</code>) and page layouts.</p>
+            </li>
+            <li>
+                <p>Maintain mirrored versions of icons when they indicate navigation or flow.</p>
+            </li>
+            <li>
+                <p>Test the output visually in an RTL language to catch misalignments or broken elements.</p>
+            </li>
+            <li>
+                <p>Ensure all style and condition tags are applied consistently across the mirrored layout.</p>
+            </li>
+        </ul>
+        <div class="dont" MadCap:autonum="❌"> Pitfalls to avoid:</div>
+        <ul>
+            <li>
+                <p>Using “forward” arrow icons that point right → in Arabic UI (should point ← instead).</p>
+            </li>
+            <li>
+                <p>Applying left-aligned styles to RTL content or forgetting to align headers and footers appropriately.</p>
+            </li>
+            <li>
+                <p>Embedding text in images—RTL languages may require image mirroring, which becomes hard to do if text is baked in.</p>
+            </li>
+        </ul>
+        <div class="longExample">
+            <p><strong>Example – directional icon mismatch:</strong>
+            </p>
+            <p>A breadcrumb trail like “Home → Products → Details” should become “Details ← Products ← Home” in RTL output, along with matching icon direction.</p>
+        </div>
+    </body>
+</html>

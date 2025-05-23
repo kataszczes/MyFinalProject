@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Conditions</h1>
+        <h3>What they are:</h3>
+        <p>Conditions in <MadCap:variable name="Variables.Flare" /> are a content filtering mechanism that let you create multiple variations of your documentation from a single source. You apply condition tags to topics, paragraphs, or images to include or exclude content depending on the output target—for example, by language, audience, product version, or region.</p>
+        <p>This is essential for single-sourcing and supports scenarios such as:</p>
+        <ul>
+            <li>
+                <p>Showing different instructions for different software editions (for example, Standard vs. Pro)</p>
+            </li>
+            <li>
+                <p>Hiding region-specific content from global outputs</p>
+            </li>
+            <li>
+                <p>Outputting only content relevant to internal vs. external audiences</p>
+            </li>
+        </ul>
+        <p>However, while conditions are helpful, they must be carefully managed when preparing content for localization.</p>
+        <h3>Best practices for localization:</h3>
+        <p>1. <span class="bulletIntroduction">Limit the number of condition sets</span></p>
+        <p>Having too many condition tags or complex conditional logic can significantly complicate translation. Translators may receive content without knowing which combination of conditions will be visible together, increasing the risk of confusion or inconsistency.</p>
+        <p>2. <span class="bulletIntroduction">Use clear, meaningful names</span></p>
+        <p>Avoid generic or cryptic names like <code>Cond1</code>, <code>Tag2</code>, or <code>OldNew</code>. Instead, use consistent, descriptive naming such as:</p>
+        <ul>
+            <li>
+                <p><code>Language_FR</code>
+                </p>
+            </li>
+            <li>
+                <p><code>Product_Pro</code>
+                </p>
+            </li>
+            <li>
+                <p><code>Region_EU</code>
+                </p>
+            </li>
+            <li>
+                <p><code>Audience_Admin</code>
+                </p>
+            </li>
+        </ul>
+        <p>This improves project maintainability and helps translators and reviewers better understand the context.</p>
+        <p>3. <span class="bulletIntroduction">Avoid overlapping conditions on the same content block</span></p>
+        <p>Overlapping multiple condition tags on the same paragraph or sentence—especially when they are poorly documented—can lead to unpredictable output combinations and mistranslations. Instead, write out complete sentences of paragraphs and assign them the required conditions.</p>
+        <p>4. <span class="bulletIntroduction">Document condition usage thoroughly</span></p>
+        <p>Create a conditions map or guide that explains:</p>
+        <ul>
+            <li>
+                <p>Which tags are used</p>
+            </li>
+            <li>
+                <p>What content they affect</p>
+            </li>
+            <li>
+                <p>Which outputs or locales they belong to</p>
+            </li>
+        </ul>
+        <p>This is especially helpful for translation vendors working outside your authoring environment.</p>
+        <div class="do" MadCap:autonum="✔️"> Good example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;p MadCap:conditions="Audience_Admin"&gt;Only administrators can access the system settings via the Configuration panel.&lt;/p&gt;</code>
+            </div>
+            <div class="example"><code>&lt;p MadCap:conditions="Audience_EndUser"&gt;You can change your personal preferences in the Settings menu.&lt;/p&gt;</code>
+            </div>
+            <p>Why it's good:</p>
+            <ul>
+                <li>
+                    <p>Conditions are applied at the paragraph level, keeping content separate and clear.</p>
+                </li>
+                <li>
+                    <p>The tags are descriptive and self-explanatory (<code>Audience_Admin</code>, <code>Audience_EndUser</code>), so there's no ambiguity.</p>
+                </li>
+                <li>
+                    <p>Translators can easily tell which content is intended for which user group, and you can generate audience-specific outputs without confusion.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="dont" MadCap:autonum="❌"> Poor example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;p MadCap:conditions="UserType_Adv, Product_Old"&gt;This advanced feature is only present in the old version.&lt;/p&gt;</code>
+            </div>
+            <p>Problems:</p>
+            <ul>
+                <li>
+                    <p>Multiple condition tags are stacked without clarity. It’s unclear what the final output will include. If there's no documentation, a translator may not know which variant will be used or whether to translate both.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="translatorPOV">
+            <MadCap:snippetText src="../../../Resources/Snippets/TranslatorPOV.flsnp" />
+            <p>
+                <p>Using conditions mid-sentence to create content variants can make it unclear what the final outputs will look like and harder for translators to work with. This is how text with badly applied conditions may appear in <MadCap:variable name="Variables.Flare" />:</p>
+                <p>
+                    <img src="../../../Resources/Images/condition/condition-flare.png" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" alt="A screenshot of how conditions look in MadCap Flare" />
+                </p>
+                <p>This is how a translator sees this text with conditions:</p>
+                <ul>
+                    <li>
+                        <p><MadCap:variable name="Variables.Lingo" />
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/condition/condition-lingo-not.png" alt="A screenshot of an example text with badly applied conditions and how they look in MadCap Lingo" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+                </p>
+                <ul>
+                    <li>
+                        <p>SDL Trados Studio</p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/condition/condition-trados-not.png" alt="A screenshot of an example text with badly applied conditions and how they look in SDL Trados Studio" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+                </p>
+                <p>Problems:</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>An abundance of tags creates visual clutter, making it difficult to understand the sentence structure and anticipate the final outputs.</p>
+                    </li>
+                    <li>
+                        <p>Conditional text may require different grammatical structures in inflected languages, making accurate translation more difficult or even impossible.</p>
+                    </li>
+                    <li>
+                        <p>Creating plural forms of nouns by adding "-s" inside a conditional tag  makes translation nearly impossible in many languages.</p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

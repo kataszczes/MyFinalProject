@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="h1-mcThirdLevel">Snippets</h1>
+        <h3>What they are:</h3>
+        <p>Snippets in <MadCap:variable name="Variables.Flare" /> are reusable blocks of content that can be inserted into multiple topics. They are like building blocks—if you create a chunk of content once (like a warning, a note, or a repeated procedure step), you can reuse it across your documentation by inserting it as a snippet.</p>
+        <p>A snippet behaves like a live reference: when you edit the snippet file, all instances of it update automatically wherever it has been inserted.</p>
+        <h3>Why snippets matter for localization</h3>
+        <p>When preparing content for translation, repetition equals cost. Repeating the same content across files can increase word count, translation time, and the risk of inconsistent translations. Snippets help eliminate that by:</p>
+        <ul>
+            <li>
+                <p>Reducing redundant content that needs to be translated.</p>
+            </li>
+            <li>
+                <p>Ensuring consistent phrasing and structure across all localized outputs.</p>
+            </li>
+            <li>
+                <p>Making updates easier, especially when changes occur late in the documentation cycle.</p>
+            </li>
+        </ul>
+        <p>If a snippet is already translated once, most CAT tools will recognize it and reuse the existing translation, saving time and money.</p>
+        <h3>Best practices for localization:</h3>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Use for modular, repetitive content:</span> Snippets reduce the number of words that require translation and keep content consistent. For example, a standard disclaimer used in 30 topics only needs to be translated once if reused via a snippet.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Do not use in partial sentences:</span> Translators do not see the whole sentence, each part is stored separately. Each snippet is its own file in a long list of other files, making it difficult for translators to know its context. Also, the content of the snippet may depend on the part of the sentence that is not snippetized, for example in inflected languages like Polish.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Keep snippets self-contained:</span> Avoid including full paragraphs or context-dependent content. Snippets should not depend on external content to be understood in translation.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Avoid excessive nesting:</span> Deeply nested snippets (snippets inside snippets) complicate both authoring and translation workflows. Limit to one level where possible.</p>
+            </li>
+        </ul>
+        <div class="do" MadCap:autonum="✔️"> Good example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;Snippet&gt;Note: This feature is only available in the Pro version.&lt;/Snippet&gt;</code>
+            </div>
+            <p>Why it’s good:</p>
+            <ul>
+                <li>
+                    <p>Reusable, clear, and context-independent.</p>
+                </li>
+                <li>
+                    <p>Easy to localize once and reuse globally.</p>
+                </li>
+                <li>
+                    <p>No embedded formatting or conditions.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="dont" MadCap:autonum="❌"> Poor example:</div>
+        <div class="descriptiveExample">
+            <div class="example"><code>&lt;Snippet&gt;The error occurs if &lt;/Snippet&gt; &lt;Variable&gt;[data element]&lt;/Variable&gt; &lt;Snippet&gt; is populated, but source is empty or null.&lt;/Snippet&gt;</code>
+            </div>
+            <p>Problems:</p>
+            <ul>
+                <li>
+                    <p>The translator sees both snippets as separate files. They probably appear in a way that the translator cannot recognize that they belong together.</p>
+                </li>
+                <li>
+                    <p>In some languages the grammatical structure of the order of the snippets may need to change.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="tip">Tip: In Flare and Lingo, you can flatten the snippets and convert them to plain text. This way the translator sees the full contexts and can adjust the grammatical structure each time.</div>
+        <div class="translatorPOV">
+            <MadCap:snippetText src="../../../Resources/Snippets/TranslatorPOV.flsnp" />
+            <p>Splitting a sentence into multiple snippets breaks sentence flow and removes necessary context for translators. This is how text with badly applied snippets may appear in <MadCap:variable name="Variables.Flare" />:</p>
+            <img src="../../../Resources/Images/snippet/snippet-flare.png" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" alt="A screenshot of how snippets look in MadCap Flare" />
+            <p>This is how a translator sees this text with the snippets maintained:</p>
+            <ul>
+                <li>
+                    <p><MadCap:variable name="Variables.Lingo" /> </p>
+                </li>
+            </ul>
+            <img src="../../../Resources/Images/snippet/snippet-lingo-not.png" alt="A screenshot of an example text with badly applied snippets and how they look in MadCap Lingo" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+            <ul>
+                <li>
+                    <p>SDL Trados Studio</p>
+                </li>
+            </ul>
+            <img src="../../../Resources/Images/snippet/snippet-trados-not.png" alt="A screenshot of an example text with badly applied snippets and how they look in SDL Trados Studio" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+            <p>Problems:</p>
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>The text is fragmented and lacks context.</p>
+                </li>
+            </ul>
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><MadCap:variable name="Variables.Lingo" /> shows the content of a snippet; however it is not immediately editable as the  snippet is stored in a separate file.</p>
+                </li>
+                <li>
+                    <p>In third-party CAT tools like SDL Trados Studio or memoQ, the translator does not immediately see the content of a snippet. They must locate it in the project files manually.</p>
+                </li>
+                <li>
+                    <p>Adjusting the grammatical structure of a sentence is nearly impossible due to the fixed nature of snippets.</p>
+                </li>
+            </ul>
+            <p><MadCap:variable name="Variables.Flare" /> gives an opportunity to flatten snippets during the export process in order to remedy some of the possible problems. This is how the translator sees the text with snippets flattened:</p>
+            <ul>
+                <li>
+                    <p><MadCap:variable name="Variables.Lingo" />
+                    </p> </li>
+            </ul>
+            <img src="../../../Resources/Images/snippet/snippet-lingo-flat.png" alt="A screenshot of an example text with badly applied snippets and how they look in MadCap Lingo when flattened" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" MadCap:mediastyle="@media print { width: 100%; }" />
+            <ul>
+                <li>
+                    <p>SDL Trados Studio</p>
+                </li>
+            </ul>
+            <img src="../../../Resources/Images/snippet/snippet-trados-flat.png" alt="A screenshot of an example text with badly applied snippets and how they look in SDL Trados Studio when flattened" MadCap:mediastyle="@media print { width: 100%; }" style="width: 100%;padding-top: 0.5rem;padding-bottom: 0.5rem;" />
+            <p>In the case of snippets, flattening them solves most of the problems. However, the snippet feature is lost in the translated files, and so are the benefits of using them in the first place.</p>
+        </div>
+    </body>
+</html>

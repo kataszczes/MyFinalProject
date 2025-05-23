@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Final project/1. Introduction/Introduction.htm'],s:['+','load','which'],p:[['+',20],['complexity',5],['flare',39],['load',10],['powerful',7],['such',40],['want',40]]});

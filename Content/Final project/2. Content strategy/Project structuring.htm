@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Project structuring</h1>
+        <p>Structuring your project well from the start saves time, reduces errors, and enables reusability of content across languages, outputs, and platforms.</p>
+        <h3>Parent projects for shared content</h3>
+        <p>If multiple projects share common content, consider creating a parent project that houses these shared elements. Other projects can then reference this parent project, ensuring consistency and simplifying updates across documentation sets.​</p>
+        <h3>Logical folder hierarchy</h3>
+        <p>Structure your content in a way that reflects its logical flow and relationships. Group related topics into folders, and use descriptive naming conventions. This organization aids in navigation, both for authors and end users, and simplifies content management.​</p>
+        <h3>Language folders or projects</h3>
+        <p>For multilingual content, consider how you’ll structure your language versions:</p>
+        <ul>
+            <li>
+                <p><span class="bulletIntroduction">Single project with condition tags and language variables:</span> More complex to manage, but efficient for shared content.</p>
+            </li>
+            <li>
+                <p><span class="bulletIntroduction">Separate projects per language:</span> Easier to isolate translations, but harder to maintain consistency.</p>
+            </li>
+        </ul>
+        <p>Flare allows you to manage multiple targets from a single project, which can simplify maintenance when set up properly.</p>
+        <h3>Standardize naming conventions</h3>
+        <p>Consistent naming across topics, snippets, conditions, and variables helps streamline translation and avoids confusion. For example:</p>
+        <ul>
+            <li>
+                <p>Use prefixes like<code> t_</code>, <code>s_</code>, <code>img_</code> for topics, snippets, and images.</p>
+            </li>
+            <li>
+                <p>Include language codes in translated versions (for example,<code> home_fr.htm</code> for French).</p>
+            </li>
+        </ul>
+        <p>This standardization also helps when using scripts or translation tools to automate part of the workflow.</p>
+        <h3>Use TOCs and targets thoughtfully</h3>
+        <p>Define different Table of Contents (TOCs) and targets for each audience or language. This allows:</p>
+        <ul>
+            <li>
+                <p>Tailored navigation structures per language or product</p>
+            </li>
+            <li>
+                <p>Conditional inclusion of topics</p>
+            </li>
+            <li>
+                <p>Granular control over outputs (for example, disabling PDF output for certain languages)</p>
+            </li>
+        </ul>
+        <h3>Prepare for localization features</h3>
+        <p>Use Flare’s built-in features to enable localization from the outset:</p>
+        <ul>
+            <li>
+                <p>
+                    <MadCap:xref href="../3. Writing for localization/Prudent use of Flare features/Variables.htm">Variables</MadCap:xref>: For branding, product names, legal text—translated once and reused across the project.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="../3. Writing for localization/Prudent use of Flare features/Snippets.htm">Snippets</MadCap:xref>: Ideal for content that repeats—a definition, warning, or disclaimer.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="../3. Writing for localization/Prudent use of Flare features/Conditions.htm">Conditions</MadCap:xref>: To manage content visibility per language or output.</p>
+            </li>
+        </ul>
+        <h3>Maintain documentation</h3>
+        <p>Keep thorough documentation of your project's structure, conventions, and workflows. This practice is invaluable for onboarding new team members, ensuring continuity, and supporting localization efforts.</p>
+    </body>
+</html>
