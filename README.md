@@ -11,7 +11,7 @@ This project was developed for **training and educational purposes only**. It is
 - **English**: This is the original and primary version of the documentation.
 - **Polish**: The Polish version was generated using **machine translation** and has **not been post-edited**. It is included to showcase the ability to create multilingual web pages using MadCap FLare authoring tool.
 
-## Content Overview
+## Content overview
 
 The project demonstrates:
 - Content authoring in MadCap Flare
