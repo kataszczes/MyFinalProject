@@ -1,6 +1,6 @@
 # Multilingual documentation project
 
-This repository contains a sample documentation project created as part of a postgraduate Technical Communication program. The primary aim of this project is to demonstrate the ability to use authoring software (MadCap Flare), as well as present best practices in preparing technical content for localization and translation.
+This repository contains a sample documentation project created as part of a postgraduate Technical Communication program. The primary aim of this project is to demonstrate the ability to utilize authoring software (MadCap Flare) and present best practices in preparing technical content for localization and translation.
 
 **Online preview can be accessed here:** <a href="https://kataszczes.github.io/MyFinalProject/en-us/Content/Home.htm" target="_blank">How to create content for localization in MadCap Flare</a>
 
@@ -11,7 +11,7 @@ This project was developed for **training and educational purposes only**. It is
 ## Languages
 
 - **English**: This is the original and primary version of the documentation.
-- **Polish**: The Polish version was generated using **machine translation** and has **not been post-edited**. It is included to showcase the ability to create multilingual web pages using MadCap FLare authoring tool.
+- **Polish**: The Polish version was generated using **machine translation** and has **not been post-edited**. It is included to showcase the ability to create multilingual web pages using MadCap Flare authoring tool.
 
 ## Content overview
 
