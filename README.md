@@ -2,7 +2,7 @@
 
 This repository contains a sample documentation project created as part of a postgraduate Technical Communication program. The primary aim of this project is to demonstrate the ability to utilize authoring software (MadCap Flare) and present best practices in preparing technical content for localization and translation.
 
-**Online preview can be accessed here:** <a href="https://kataszczes.github.io/MyFinalProject/en-us/Content/Home.htm" target="_blank">How to create content for localization in MadCap Flare</a>
+**Online preview can be accessed here: [How to create content for localization in MadCap Flare](https://kataszczes.github.io/MyFinalProject/en-us/Content/Home.htm)**
 
 ## Purpose
 
